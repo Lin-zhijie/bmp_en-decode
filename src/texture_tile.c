@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <memory.h>
 
-#include "../image/image_mat.h"
+#include "image_mat.h"
 #include "texture_tile.h"
 
 static void Copy4by4Tile(ImageMat* mat, int x, int y, uint8_t* pTextureTile, uint32_t* ttOffset);

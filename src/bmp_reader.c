@@ -7,7 +7,7 @@
 #include <malloc.h>
 #include <memory.h>
 
-#include "../image/image_mat.h"
+#include "image_mat.h"
 #include "bmp_reader.h"
 
 static BitmapHead* ReadBitmapInfoHead(FILE* file);

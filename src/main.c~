@@ -4,11 +4,11 @@
 #include <memory.h>
 #include <malloc.h>
 
-#include "image/image_mat.h"
-#include "bmp/bmp.h"
-#include "bmp/bmp_reader.h"
-#include "bmp/bmp_writer.h"
-#include "texture_tile/texture_tile.h"
+#include "image_mat.h"
+#include "bmp.h"
+#include "bmp_reader.h"
+#include "bmp_writer.h"
+#include "texture_tile.h"
 
 void PrintHelp(char* programName);
 

@@ -4,7 +4,7 @@
 // Description: A struct for Windows Bitmap image file
 #pragma once
 #include <stdint.h>
-#include "../image/image_mat.h"
+#include "image_mat.h"
 
 #define DEFAULT_BMP_HEADER 19778
 #define DEFAULT_BMP_HEAD_LEN 14
