@@ -114,14 +114,14 @@ int main(int argc, char *argv[])
 		FILE *fpOutputFile;
 		fpOutputFile = fopen(outputFileName, "wb+");
 
-//		fwrite(&mat->width, sizeof(uint32_t), 1, fpOutputFile);
-//		fwrite(&mat->height, sizeof(uint32_t), 1, fpOutputFile);
-		fprintf(fpOutputFile, "%04x%04x", mat->width, mat->height);
+		fwrite(&mat->width, sizeof(uint32_t), 1, fpOutputFile);
+		fwrite(&mat->height, sizeof(uint32_t), 1, fpOutputFile);
+//		fprintf(fpOutputFile, "%04x%04x", mat->width, mat->height);
 
 		uint32_t wrPointer = 0;
 		do {
-//			wrPointer += fwrite(tileMapBuffer + wrPointer, sizeof(uint8_t), length - wrPointer, fpOutputFile);
-			fprintf(fpOutputFile, "%hhx", tileMapBuffer[wrPointer++]);
+			wrPointer += fwrite(tileMapBuffer + wrPointer, sizeof(uint8_t), length - wrPointer, fpOutputFile);
+//			fprintf(fpOutputFile, "%hhx", tileMapBuffer[wrPointer++]);
 		} while (wrPointer != length);
 
 		free(tileMapBuffer);
